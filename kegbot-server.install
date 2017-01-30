@@ -1,0 +1,8 @@
+pre_install() {
+	useradd --system kegbot -b /var/lib/ || true
+}
+
+post_install () {
+	echo "Execute kegbot-setup to setup server"
+	echo "Enable kegbot-server.service to run on boot."
+}

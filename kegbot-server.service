@@ -1,0 +1,10 @@
+[Unit]
+Description="Kegbot Server"
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kegbot runserver
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
