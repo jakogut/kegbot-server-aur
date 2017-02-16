@@ -16,7 +16,7 @@ source=("git+https://github.com/Kegbot/$pkgname"
 	"kegbot")
 
 md5sums=('SKIP'
-         '85ab2ed3906ff582a06fc02f300e72d0'
+         'a022ea0fd66555316bd5a5a4edbf92e8'
          '9b38001dd63da2794168e529e111bcd7'
          '16a9b746f2be7bfc870d9b86872e395a')
 
