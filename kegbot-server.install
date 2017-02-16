@@ -1,8 +1,10 @@
-pre_install() {
-	useradd --system kegbot -b /var/lib/ || true
-}
-
 post_install () {
-	echo "Execute kegbot-setup to setup server"
+	useradd --system kegbot -d /var/lib/kegbot || true
+
+	mkdir -p /var/lib/kegbot
+	chown kegbot:kegbot -R /var/lib/kegbot
+
+	echo "Execute 'kegbot-setup' to setup server"
+	echo "Create your database with the utf8 encoding"
 	echo "Enable kegbot-server.service to run on boot."
 }

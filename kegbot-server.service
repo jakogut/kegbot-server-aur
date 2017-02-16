@@ -3,7 +3,9 @@ Description="Kegbot Server"
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/kegbot runserver
+User=kegbot
+Group=kegbot
+ExecStart=/usr/bin/kegbot runserver 0.0.0.0:8000
 Restart=on-failure
 
 [Install]

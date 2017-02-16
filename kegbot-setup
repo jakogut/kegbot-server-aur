@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-sudo -u kegbot /usr/share/webapps/kegbot/bin/setup-kegbot.py --data_root /var/lib/kegbot --settings_dir /etc/webapps/kegbot --
+sudo -H -u kegbot bash -c "(cd /usr/share/webapps/kegbot; source bin/activate; bin/python bin/setup-kegbot.py)"
